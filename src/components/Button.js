@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 
 import styled from 'styled-components';
 
-const buttonColor = '#FFFFFF'
-const buttonHoverColor = '#000000'
+const buttonColor = '#FF0000'
+const buttonHoverColor = '#00FF00'
 
 const Button = styled.button`
     color: #fff;
@@ -29,6 +29,6 @@ const Button = styled.button`
 
 export default class extends Component {
   render() {
-    return <Button>{this.props.children}</Button>
+    return <Button onClick={this.props.onClick}>{this.props.children}</Button>
   }
 }
