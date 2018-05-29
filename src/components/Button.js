@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 import styled from 'styled-components';
 
@@ -29,17 +29,6 @@ const Button = styled.button`
 
 export default class extends Component {
   render() {
-    // const { title, content } = this.props;
-
-    // return (
-    //   <Container>
-    //     <h4>{title}</h4>
-    //     <p>
-    //       {content}
-    //     </p>
-    //   </Container>
-    // )
-
     return <Button>{this.props.children}</Button>
   }
 }
